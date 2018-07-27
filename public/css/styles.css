@@ -1,9 +1,10 @@
 #body {
     margin-top: 60px;
     margin-bottom: 30px;
-    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
-h1 {
+h1, h2 {
     text-align: center;
 }
 .nav-item {

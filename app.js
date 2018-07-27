@@ -29,6 +29,21 @@ app.use(cookieSession({
 app.get('/', (req, res) => {
     res.render('home');
 });
+app.get('/about', (req, res) => {
+    res.render('about');
+});
+app.get('/fotiha', (req, res) => {
+    res.render('fotiha');
+});
+app.get('/baqara', (req, res) => {
+    res.render('baqara');
+});
+app.get('/imran', (req, res) => {
+    res.render('imran');
+});
+app.get('/niso', (req, res) => {
+    res.render('niso');
+});
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
