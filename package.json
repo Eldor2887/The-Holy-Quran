@@ -1,0 +1,24 @@
+{
+  "name": "quron",
+  "version": "1.0.0",
+  "description": "Quroni Karim uzbek tilida",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Quroni",
+    "Karim",
+    "Uzbekcha"
+  ],
+  "author": "Eldor Togaymurotov",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.2.5",
+    "passport": "^0.4.0"
+  }
+}
