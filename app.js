@@ -49,9 +49,9 @@ app.get('/find', (req, res) => {
 });
 app.post('/search', (req, res) => {
     const searchInput = req.body.search;
-    if(searchInput === 'fatihah' || searchInput === 'al-fatihah'){
+    if(searchInput === 'fatihah' || searchInput === 'al-fatihah' || searchInput === 'Fatihah' || searchInput === 'Al-Fatihah'){
         res.render('fatihah');
-    }else if(searchInput === 'baqarah' || searchInput === 'al-baqarah'){
+    }else if(searchInput === 'baqarah' || searchInput === 'al-baqarah' || searchInput === 'Baqarah' || searchInput === 'Al-Baqarah'){
         res.render('baqarah');
     }
     else{
