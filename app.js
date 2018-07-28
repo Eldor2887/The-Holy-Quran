@@ -32,11 +32,11 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about');
 });
-app.get('/fotiha', (req, res) => {
-    res.render('fotiha');
+app.get('/fatihah', (req, res) => {
+    res.render('fatihah');
 });
-app.get('/baqara', (req, res) => {
-    res.render('baqara');
+app.get('/baqarah', (req, res) => {
+    res.render('baqarah');
 });
 app.get('/imran', (req, res) => {
     res.render('imran');
@@ -44,7 +44,20 @@ app.get('/imran', (req, res) => {
 app.get('/niso', (req, res) => {
     res.render('niso');
 });
-
+app.get('/find', (req, res) => {
+    res.render('search');
+});
+app.post('/search', (req, res) => {
+    const searchInput = req.body.search;
+    if(searchInput === 'fatihah' || searchInput === 'al-fatihah'){
+        res.render('fatihah');
+    }else if(searchInput === 'baqarah' || searchInput === 'al-baqarah'){
+        res.render('baqarah');
+    }
+    else{
+        res.json({'error':'Not found'});
+    }
+});
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
