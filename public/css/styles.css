@@ -1,12 +1,10 @@
 #body {
-    margin-top: 50px;
-    margin-bottom: 10px;
-    padding: 20px 10px 100px 10px;
+    padding: 60px 5px 60px 5px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     background-color: black;
 }
-.container {
+.page {
     background-color: bisque;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -31,4 +29,15 @@ h1, h2 {
 }
 #koranjpg {
     width: 100%;
+}
+#homepage {
+    height: 600px;
+    color: antiquewhite;
+    text-align: center;
+}
+#nav-brand {
+    color: antiquewhite;
+}
+.nav-link {
+    color: antiquewhite;
 }
