@@ -41,21 +41,23 @@ app.get('/baqarah', (req, res) => {
 app.get('/imran', (req, res) => {
     res.render('imran');
 });
-app.get('/niso', (req, res) => {
-    res.render('niso');
+app.get('/nisa', (req, res) => {
+    res.render('nisa');
 });
 app.get('/find', (req, res) => {
     res.render('search');
 });
 app.post('/search', (req, res) => {
-    const searchInput = req.body.search;
-    if(searchInput === 'fatihah' || searchInput === 'al-fatihah' || searchInput === 'Fatihah' || searchInput === 'Al-Fatihah'){
+    const searchInput = req.body.search.toLowerCase();
+    if(searchInput === 'fatihah' || searchInput === 'al-fatihah'){
         res.render('fatihah');
-    }else if(searchInput === 'baqarah' || searchInput === 'al-baqarah' || searchInput === 'Baqarah' || searchInput === 'Al-Baqarah'){
+    }else if(searchInput === 'baqarah' || searchInput === 'al-baqarah'){
         res.render('baqarah');
+    }else if(searchInput === 'nisa' || searchInput === 'an-nisa' || searchInput === 'annisa'){
+        res.render('nisa');
     }
     else{
-        res.json({'error':'Not found'});
+        res.render('alertbox');
     }
 });
 app.listen(port, () => {

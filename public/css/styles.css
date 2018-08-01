@@ -15,6 +15,9 @@ h1, h2 {
 .nav-item {
     text-align: center;
 }
+#about {
+    font: italic;
+}
 #fatihah {
     height: 600px;
 }
@@ -40,4 +43,8 @@ h1, h2 {
 }
 .nav-link {
     color: antiquewhite;
+}
+.error {
+    height: 500px;
+    
 }
