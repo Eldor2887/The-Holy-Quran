@@ -44,6 +44,9 @@ app.get('/imran', (req, res) => {
 app.get('/nisa', (req, res) => {
     res.render('nisa');
 });
+app.get('/maidah', (req, res) => {
+    res.render('maidah');
+});
 app.get('/find', (req, res) => {
     res.render('search');
 });
@@ -55,6 +58,8 @@ app.post('/search', (req, res) => {
         res.render('baqarah');
     }else if(searchInput === 'nisa' || searchInput === 'an-nisa' || searchInput === 'annisa'){
         res.render('nisa');
+    }else if(searchInput === 'maidah' || searchInput === 'almaidah' || searchInput === 'al-maidah'){
+        res.render('maidah');
     }
     else{
         res.render('alertbox');
