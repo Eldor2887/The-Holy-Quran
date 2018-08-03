@@ -47,6 +47,9 @@ app.get('/nisa', (req, res) => {
 app.get('/maidah', (req, res) => {
     res.render('maidah');
 });
+app.get('/anam', (req, res) => {
+    res.render('anam');
+});
 app.get('/find', (req, res) => {
     res.render('search');
 });
@@ -60,6 +63,8 @@ app.post('/search', (req, res) => {
         res.render('nisa');
     }else if(searchInput === 'maidah' || searchInput === 'almaidah' || searchInput === 'al-maidah'){
         res.render('maidah');
+    }else if(searchInput === 'anam' || searchInput === 'al-anam' || searchInput === 'alanam'){
+        res.render('anam');
     }
     else{
         res.render('alertbox');
