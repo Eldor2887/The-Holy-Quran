@@ -50,6 +50,9 @@ app.get('/maidah', (req, res) => {
 app.get('/anam', (req, res) => {
     res.render('anam');
 });
+app.get('/araf', (req, res) => {
+    res.render('araf');
+});
 app.get('/find', (req, res) => {
     res.render('search');
 });
@@ -65,6 +68,8 @@ app.post('/search', (req, res) => {
         res.render('maidah');
     }else if(searchInput === 'anam' || searchInput === 'al-anam' || searchInput === 'alanam'){
         res.render('anam');
+    }else if(searchInput === 'araf' || searchInput === 'al-araf' || searchInput === 'alaraf'){
+        res.render('araf');
     }
     else{
         res.render('alertbox');
