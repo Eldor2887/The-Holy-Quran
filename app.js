@@ -53,6 +53,9 @@ app.get('/anam', (req, res) => {
 app.get('/araf', (req, res) => {
     res.render('araf');
 });
+app.get('/anfal', (req, res) => {
+    res.render('anfal');
+});
 app.get('/find', (req, res) => {
     res.render('search');
 });
@@ -70,6 +73,8 @@ app.post('/search', (req, res) => {
         res.render('anam');
     }else if(searchInput === 'araf' || searchInput === 'al-araf' || searchInput === 'alaraf'){
         res.render('araf');
+    }else if(searchInput === 'anfal' || searchInput === 'al-anfal' || searchInput === 'alanfal'){
+        res.render('anfal');
     }
     else{
         res.render('alertbox');
