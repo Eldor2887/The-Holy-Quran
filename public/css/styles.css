@@ -19,7 +19,8 @@ h1, h2 {
     font: italic;
 }
 #fatihah {
-    height: 600px;
+    padding-bottom: 70px;
+    margin-bottom: 50px;
 }
 #search {
     height: 500px;
