@@ -19,6 +19,20 @@
     margin-right: 0%;
     margin-left: 0%;
 }
+.col-sm{
+    width: 33%;
+    padding-right: 0%;
+    padding-left: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+}
+#nav-hr{
+    background-color: antiquewhite;
+}
+#chapters {
+    color: brown;
+    text-align: center;
+}
 .page {
     background-color: bisque;
     padding-top: 20px;
@@ -40,9 +54,17 @@ h1, h2 {
 }
 #donatepage{
     color: bisque;
+    height: auto;
 }
 #donatebtn{
-    padding: 100px;
+    padding-left: 80px;
+    padding-top: 10px;
+}
+#amount{
+    padding-left: 60px;
+}
+.col-sm-5{
+    font-family: cursive;
 }
 .row {
     width: 100%;
