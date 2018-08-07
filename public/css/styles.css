@@ -4,6 +4,10 @@
     font-size: 24px;
     background-color: black;
 }
+.navbar{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
 .page {
     background-color: bisque;
     padding-top: 20px;
@@ -24,6 +28,12 @@ h1, h2 {
 }
 #search {
     height: 500px;
+}
+#donatepage{
+    color: bisque;
+}
+#donatebtn{
+    padding: 100px;
 }
 .row {
     width: 100%;

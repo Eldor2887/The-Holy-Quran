@@ -59,6 +59,14 @@ app.get('/anfal', (req, res) => {
 app.get('/tawbah', (req, res) => {
     res.render('tawbah');
 });
+app.get('/yunus', (req, res) => {
+    res.render('yunus');
+});
+// DONATE PAGE
+app.get('/donate',(req, res) => {
+    res.render('donate');
+});
+//SEARCH ENGINE
 app.get('/find', (req, res) => {
     res.render('search');
 });
@@ -80,6 +88,8 @@ app.post('/search', (req, res) => {
         res.render('anfal');
     }else if(searchInput === 'tawbah' || searchInput === 'at-tawbah' || searchInput === 'attawbah'){
         res.render('tawbah');
+    }else if(searchInput === 'yunus' || searchInput === 'unus'){
+        res.render('yunus');
     }
     else{
         res.render('alertbox');
