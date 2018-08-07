@@ -6,15 +6,13 @@
 }
 .navbar{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
 }
-.fa-th-list {
-    font-size: 30px;
-}
+
 .container-fluid{
     width: 100%;
 }
 .col-sm-3{
+    font-size: medium;
     width: 33%;
     padding-right: 0%;
     padding-left: 0%;
