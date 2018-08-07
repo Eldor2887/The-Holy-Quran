@@ -6,7 +6,13 @@
 }
 .navbar{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 10px;
+}
+.container-fluid{
+    width: 100%;
+}
+.col-sm-3{
+    width: 33%;
 }
 .page {
     background-color: bisque;
@@ -16,9 +22,7 @@
 h1, h2 {
     text-align: center;
 }
-.nav-item {
-    text-align: center;
-}
+
 #about {
     font: italic;
 }
