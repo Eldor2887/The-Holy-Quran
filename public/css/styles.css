@@ -55,16 +55,15 @@ h1, h2 {
 #donatepage{
     color: bisque;
     height: auto;
+    text-align: center;
 }
 #donatebtn{
     padding-left: 80px;
     padding-top: 10px;
 }
-#amount{
-    padding-left: 60px;
-}
+
 .col-sm-5{
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
 }
 .row {
     width: 100%;
