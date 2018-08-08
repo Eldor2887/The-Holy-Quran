@@ -62,6 +62,9 @@ app.get('/tawbah', (req, res) => {
 app.get('/yunus', (req, res) => {
     res.render('yunus');
 });
+app.get('/hud', (req, res) => {
+    res.render('hud');
+});
 // DONATE PAGE
 app.get('/donate',(req, res) => {
     res.render('donate');
@@ -90,6 +93,8 @@ app.post('/search', (req, res) => {
         res.render('tawbah');
     }else if(searchInput === 'yunus' || searchInput === 'unus'){
         res.render('yunus');
+    }else if(searchInput === 'hud'){
+        res.render('hud');
     }
     else{
         res.render('alertbox');
