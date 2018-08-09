@@ -65,9 +65,16 @@ app.get('/yunus', (req, res) => {
 app.get('/hud', (req, res) => {
     res.render('hud');
 });
+app.get('/yusuf', (req, res) => {
+    res.render('yusuf');
+});
 // DONATE PAGE
 app.get('/donate',(req, res) => {
     res.render('donate');
+});
+// VIDEOS
+app.get('/videos',(req, res) => {
+    res.render('videos');
 });
 //SEARCH ENGINE
 app.get('/find', (req, res) => {
@@ -95,6 +102,8 @@ app.post('/search', (req, res) => {
         res.render('yunus');
     }else if(searchInput === 'hud'){
         res.render('hud');
+    }else if(searchInput === 'yusuf'){
+        res.render('yusuf');
     }
     else{
         res.render('alertbox');
